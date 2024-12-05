@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>LISTS</h2>
+            <ul id="listContainer"></ul>
+            <div class="new-list-container">
+                <input type="text" id="newListInput" placeholder="Enter list name">
+                <button id="createListBtn">➕</button>
+            </div>
+            <button id="addListBtn">New List</button>
+            <button id="deleteListBtn">Delete List</button>
+            <div class="down-button">
+                <button id="logOutBtn" >Log Out</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h2 id="taskHeader">TASKS</h2>
+                <button id="editListBtn">✎</button>
+            </div>
+            <ul id="taskContainer"></ul>
+            <div class="task-input">
+                <input type="text" id="newTaskInput" placeholder="Enter a new task">
+                <input type="date" id="dueDateInput">
+                <button id="addTaskBtn">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="task.js"></script>
+</body>
+</html>
